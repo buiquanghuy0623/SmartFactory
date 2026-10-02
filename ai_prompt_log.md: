@@ -1,0 +1,14 @@
+
+# Nhật ký tương tác AI (AI Prompt Log)
+
+1. **Khái niệm Covering Index và ưu nhược điểm:**
+   - *Prompt:* "Giải thích khái niệm Covering Index (Chỉ mục bao phủ) là gì và tại sao nó làm tăng tốc độ SELECT lên mức tối đa nhưng lại gây hại cho thao tác INSERT trong hệ thống thời gian thực?"
+   - *Kết quả học tập:* Nắm rõ cơ chế lấy trực tiếp dữ liệu từ cây Index mà không cần đọc Data Pages, đồng thời hiểu được gánh nặng cập nhật khi các cột trong Index thay đổi liên tục.
+
+2. **Cơ chế phân bổ Clustered Index và Secondary Index trong InnoDB:**
+   - *Prompt:* "MySQL phân bổ dữ liệu trên Clustered Index (Khóa chính) và Secondary Index (Chỉ mục phụ) như thế nào ở tầng lưu trữ vật lý?"
+   - *Kết quả học tập:* Hiểu rằng Secondary Index lưu giá trị cột khóa phụ kèm theo giá trị Khóa chính, do đó việc nhồi nhét quá nhiều cột vào Index phụ sẽ làm tăng vọt kích thước tệp Index.
+
+3. **Tính toán dung lượng byte của kiểu dữ liệu MySQL:**
+   - *Prompt:* "Cách tính toán dung lượng (Byte calculation) của các kiểu dữ liệu như BIGINT, INT, DATETIME, DECIMAL, VARCHAR trong MySQL để ước tính kích thước của một Index là gì?"
+   - *Kết quả học tập:* Có cơ sở tính toán chính xác chi phí lưu trữ trên ổ đĩa cho từng
